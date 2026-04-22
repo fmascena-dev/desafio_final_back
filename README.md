@@ -27,7 +27,6 @@ O status é calculado automaticamente via trigger no banco de dados:
 
 | Ocupação | Status |
 | ---------- | -------- |
-
 | Menos de 80% da capacidade | `available` |
 | Entre 80% e 99% | `critical` |
 | 100% | `full` |
@@ -72,7 +71,6 @@ Base URL: `http://localhost:3000`
 
 | Método | Rota | Descrição |
 | -------- | ------ | ----------- |
-
 | `GET` | `/health` | Health check da API |
 | `GET` | `/api/shelters` | Lista todos os abrigos (aceita filtros) |
 | `GET` | `/api/shelters/:id` | Retorna um abrigo pelo ID |
@@ -84,7 +82,6 @@ Base URL: `http://localhost:3000`
 
 | Parâmetro | Tipo | Descrição |
 | ----------- | ------ | ----------- |
-
 | `search` | string | Busca por nome, cidade ou endereço |
 | `status` | string | `available`, `critical` ou `full` |
 | `accepts_pets` | boolean | `true` filtra abrigos que aceitam pets |
@@ -95,7 +92,6 @@ Base URL: `http://localhost:3000`
 
 | Campo | Tipo | Obrigatório | Descrição |
 | ------- | ------ | ----------- | ----------- |
-
 | `name` | string | Sim | Nome do abrigo |
 | `address` | string | Sim | Endereço completo |
 | `city` | string | Sim | Cidade |
@@ -163,7 +159,6 @@ Crie um arquivo `.env` na raiz do projeto com base no `.env.example`:
 
 | Variável | Descrição | Padrão |
 | ---------- | ----------- | -------- |
-
 | `PORT` | Porta do servidor | `3000` |
 | `DB_HOST` | Host do PostgreSQL | `localhost` |
 | `DB_PORT` | Porta do PostgreSQL | `5432` |
